@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Top-Github</string>
+    <string name="app_title">Top Github App</string>
+    <string name="progress_title_list">Loading Trending Repos...</string>
+    <string name="progress_please_wait">Please wait..!!</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="permissin_granted">Permission Granted</string>
+    <string name="transition_element_name">imageMain</string>
+    <string name="loading_error">Error Loading Detials</string>
+    <string name="progree_title_detail">Loading Repo Details...</string>
+    <string name="author">Author - </string>
+    <string name="user">User - </string>
+    <string name="repo">Repo - </string>
+    <string name="description">Description - </string>
+    <string name="no_internet_msg">No Internet, Try Again..</string>
+    <string name="somthing_wrong_msg">Something went wrong..</string>
+</resources>
