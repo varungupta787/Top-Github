@@ -22,7 +22,7 @@ constructor(internal var repoRepository: RepoRepository) : ViewModel() {
     var disposable = CompositeDisposable()
 
     fun getRepositoryListData() {
-     //   loading.value = true
+        loading.value = true
         disposable.add(
             repoRepository.getRepositoryList().subscribeOn(Schedulers.io()).observeOn(
                 AndroidSchedulers.mainThread()
