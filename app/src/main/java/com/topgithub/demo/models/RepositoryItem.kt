@@ -3,7 +3,7 @@ package com.topgithub.demo.models
 import android.os.Parcel
 import android.os.Parcelable
 
-class RepositoryItem() : Parcelable {
+open class RepositoryItem() : Parcelable {
     lateinit var username: String;
     lateinit var name: String;
     lateinit var type: String;

@@ -18,6 +18,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.ActivityOptionsCompat.makeSceneTransitionAnimation
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -29,14 +30,13 @@ import com.topgithub.demo.models.RepositoryItem
 import com.topgithub.demo.ui.adapter.GithubListAdapter
 import com.topgithub.demo.ui.interfaces.ItemClickListener
 import com.topgithub.demo.viewmodel.GithubViewModel
-import com.topgithub.demo.viewmodel.ViewModelFactory
 import javax.inject.Inject
 
 
 class RepositoryListActivity : AppCompatActivity() {
 
     @Inject
-    lateinit var viewModelFactory: ViewModelFactory
+    lateinit var viewModelFactory: ViewModelProvider.Factory
     private lateinit var viewModel: GithubViewModel
     private lateinit var mToolbar: Toolbar
     private lateinit var githubRecyclerView: RecyclerView

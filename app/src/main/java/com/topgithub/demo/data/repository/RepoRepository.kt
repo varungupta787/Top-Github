@@ -8,7 +8,7 @@ import javax.inject.Inject
 open class RepoRepository @Inject
 constructor(val apiService: ApiService) {
 
-    fun getRepositoryList(): Single<List<RepositoryItem>> {
+    open fun getRepositoryList(): Single<List<RepositoryItem>> {
         return apiService.getRepositoryList("java", "weekely")
     }
 }
